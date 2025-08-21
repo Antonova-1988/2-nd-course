@@ -1,5 +1,3 @@
-// Угадай число
-
 function guessGame() {
     const guessNumber = Math.floor(Math.random() * 100) + 1;
     
@@ -35,7 +33,7 @@ function guessGame() {
     }
 }
 
-// Простая арифметика
+
 
 function arithmeticGame() {
     const operators = ["+", "-", "*", "/"];
@@ -89,7 +87,7 @@ function arithmeticGame() {
     }   
 }
 
-// Переверни текст
+
 
 function flipText() {
     let userText = prompt('Введите любой текст');
@@ -107,7 +105,7 @@ function flipText() {
     alert (textChange);
 }
 
-// Викторина
+
 
 function simpleQuiz() {
     const quiz = [
@@ -159,7 +157,7 @@ function simpleQuiz() {
     alert(`Количество правильных ответов: ${num}.`)
 }
 
-// Камень, ножницы, бумага
+
 
 function RockScissorsPaper() {
 
@@ -184,27 +182,27 @@ function RockScissorsPaper() {
             switch (computerPlay) {
                 case 'камень':
                     if (playerAnswer === 'ножницы') {
-                        alert(`Вы проиграли! Компьютер выбрал: ${computerPlay}`); // Камень бьет ножницы
+                        alert(`Вы проиграли! Компьютер выбрал: ${computerPlay}`); 
                     } else if (playerAnswer === 'бумага') {
-                        alert(`Вы выиграли! Компьютер выбрал: ${computerPlay}`); // Бумага бьет камень
+                        alert(`Вы выиграли! Компьютер выбрал: ${computerPlay}`); 
                     } else {
                         alert('Ничья');
                     }
                     break;
                 case 'ножницы':
                     if (playerAnswer === 'бумага') {
-                        alert(`Вы проиграли! Компьютер выбрал: ${computerPlay}`); // Ножницы бьют бумагу
+                        alert(`Вы проиграли! Компьютер выбрал: ${computerPlay}`); 
                     } else if (playerAnswer === 'камень') {
-                        alert(`Вы выиграли! Компьютер выбрал: ${computerPlay}`); // Камень бьет ножницы
+                        alert(`Вы выиграли! Компьютер выбрал: ${computerPlay}`); 
                     } else {
                         alert('Ничья');
                     }
                     break;
                 case 'бумага':
                     if (playerAnswer === 'камень') {
-                        alert(`Вы проиграли! Компьютер выбрал: ${computerPlay}`); // Бумага бьет камень
+                        alert(`Вы проиграли! Компьютер выбрал: ${computerPlay}`); 
                     } else if (playerAnswer === 'ножницы') {
-                        alert(`Вы выиграли! Компьютер выбрал: ${computerPlay}`); // Ножницы бьют бумагу
+                        alert(`Вы выиграли! Компьютер выбрал: ${computerPlay}`); 
                     } else {
                         alert('Ничья');
                     }
@@ -216,7 +214,7 @@ function RockScissorsPaper() {
         
 } 
 
-// Генератор случайных цветов
+
 
 function randomColorGenerator() {
     const changeColor = document.querySelector('.change-color');
